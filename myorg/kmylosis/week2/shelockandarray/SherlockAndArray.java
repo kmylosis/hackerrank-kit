@@ -1,7 +1,8 @@
-package myorg.kmylosis.week2;
+package myorg.kmylosis.week2.shelockandarray;
 
 import java.util.List;
 import java.util.stream.IntStream;
+import myorg.kmylosis.week2.Sum;
 
 public class SherlockAndArray {
 
