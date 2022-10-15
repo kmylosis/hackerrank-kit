@@ -2,6 +2,7 @@ package myorg.kmylosis;
 
 import java.util.Arrays;
 import java.util.List;
+import myorg.kmylosis.week2.caesarcipher.CaesarCipher;
 import myorg.kmylosis.week2.drawingbook.DrawingBook;
 import myorg.kmylosis.week2.maxmin.MaxMin;
 import myorg.kmylosis.week2.shelockandarray.SherlockAndArray;
@@ -15,6 +16,9 @@ public class Main {
     System.out.println("MaxMin unfair difference: " + unfairDifference);
     int pagesTurned = DrawingBook.pageCount(9, 6);
     System.out.println("Page turned to reach p: " + pagesTurned);
+    String sentence = "abcdefghijklmnopqrstuvwxyz";
+    String newSentence = CaesarCipher.caesarCipher(sentence, 159);
+    System.out.printf("Sentence altered from %s to %s with number of shifts being %d%n", sentence, newSentence, 159);
   }
 
 }
