@@ -1,5 +1,7 @@
 package myorg.kmylosis.week2.drawingbook;
 
+import java.util.stream.IntStream;
+
 public class DrawingBook {
 
   private DrawingBook() {
@@ -28,11 +30,11 @@ public class DrawingBook {
     if (p <= n / 2) {
       return p / 2;
     }
-    int page = 0;
-    for (int i = n; i > p; i--) {
-      page++;
-    }
-    return page / 2;
+    var ref = new Object() {
+      int page = 0;
+    };
+    IntStream.range(p, n).map(i -> p + (n - 1 - i)).forEach(num -> ref.page++);
+    return ref.page / 2;
   }
 
   private static boolean isFirstOrLastPage(int n, int p) {
