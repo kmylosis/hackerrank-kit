@@ -6,6 +6,7 @@ import myorg.kmylosis.week2.caesarcipher.CaesarCipher;
 import myorg.kmylosis.week2.drawingbook.DrawingBook;
 import myorg.kmylosis.week2.maxmin.MaxMin;
 import myorg.kmylosis.week2.shelockandarray.SherlockAndArray;
+import myorg.kmylosis.week2.sumvsxor.SumXor;
 
 public class Main {
 
@@ -19,6 +20,7 @@ public class Main {
     String sentence = "abcdefghijklmnopqrstuvwxyz";
     String newSentence = CaesarCipher.caesarCipher(sentence, 159);
     System.out.printf("Sentence altered from %s to %s with number of shifts being %d%n", sentence, newSentence, 159);
+    long sumXor = SumXor.sumXor(10);
   }
 
 }
