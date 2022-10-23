@@ -3,6 +3,7 @@ package myorg.kmylosis;
 import java.util.Arrays;
 import java.util.List;
 import myorg.kmylosis.week2.caesarcipher.CaesarCipher;
+import myorg.kmylosis.week2.countergame.CounterGame;
 import myorg.kmylosis.week2.drawingbook.DrawingBook;
 import myorg.kmylosis.week2.maxmin.MaxMin;
 import myorg.kmylosis.week2.shelockandarray.SherlockAndArray;
@@ -21,6 +22,7 @@ public class Main {
     String newSentence = CaesarCipher.caesarCipher(sentence, 159);
     System.out.printf("Sentence altered from %s to %s with number of shifts being %d%n", sentence, newSentence, 159);
     long sumXor = SumXor.sumXor(10);
+    CounterGame.counterGame(132);
   }
 
 }
